@@ -1,0 +1,15 @@
+C:\Users\b0nd7\source\repos\Course_work\Course_work\obj\Debug\Course_work.csproj.AssemblyReference.cache
+C:\Users\b0nd7\source\repos\Course_work\Course_work\obj\Debug\Course_work.Form1.resources
+C:\Users\b0nd7\source\repos\Course_work\Course_work\obj\Debug\Course_work.Form2.resources
+C:\Users\b0nd7\source\repos\Course_work\Course_work\obj\Debug\Course_work.Properties.Resources.resources
+C:\Users\b0nd7\source\repos\Course_work\Course_work\obj\Debug\Course_work.csproj.GenerateResource.cache
+C:\Users\b0nd7\source\repos\Course_work\Course_work\obj\Debug\Course_work.csproj.CoreCompileInputs.cache
+C:\Users\b0nd7\source\repos\Course_work\Course_work\bin\Debug\Database1.mdf
+C:\Users\b0nd7\source\repos\Course_work\Course_work\bin\Debug\Database1_log.ldf
+C:\Users\b0nd7\source\repos\Course_work\Course_work\bin\Debug\Course_work.exe.config
+C:\Users\b0nd7\source\repos\Course_work\Course_work\bin\Debug\Course_work.exe
+C:\Users\b0nd7\source\repos\Course_work\Course_work\bin\Debug\Course_work.pdb
+C:\Users\b0nd7\source\repos\Course_work\Course_work\obj\Debug\Course_work.exe
+C:\Users\b0nd7\source\repos\Course_work\Course_work\obj\Debug\Course_work.pdb
+C:\Users\b0nd7\source\repos\Course_work\Course_work\obj\Debug\Course_work.Form3.resources
+C:\Users\b0nd7\source\repos\Course_work\Course_work\bin\Debug\ffmpeg.exe

@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{839C8D84-92F6-4076-8C1B-D05E6B9A8253}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Course_work</RootNamespace>
+    <AssemblyName>Course_work</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chord.cs" />
+    <Compile Include="Chords_Progression.cs" />
+    <Compile Include="ffmpegLauncher.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPlayer.cs" />
+    <Compile Include="ISaver.cs" />
+    <Compile Include="MusicalUnit.cs" />
+    <Compile Include="MyButtonClass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Note.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Chords Sound\A#.wav" />
+    <EmbeddedResource Include="Chords Sound\A#m.wav" />
+    <EmbeddedResource Include="Chords Sound\A.wav" />
+    <EmbeddedResource Include="Chords Sound\Am.wav" />
+    <EmbeddedResource Include="Chords Sound\B.wav" />
+    <EmbeddedResource Include="Chords Sound\Bm.wav" />
+    <EmbeddedResource Include="Chords Sound\C#.wav" />
+    <EmbeddedResource Include="Chords Sound\C#m.wav" />
+    <EmbeddedResource Include="Chords Sound\C.wav" />
+    <EmbeddedResource Include="Chords Sound\Cm.wav" />
+    <EmbeddedResource Include="Chords Sound\D#.wav" />
+    <EmbeddedResource Include="Chords Sound\D#m.wav" />
+    <EmbeddedResource Include="Chords Sound\D.wav" />
+    <EmbeddedResource Include="Chords Sound\Dm.wav" />
+    <EmbeddedResource Include="Chords Sound\E.wav" />
+    <EmbeddedResource Include="Chords Sound\Em.wav" />
+    <EmbeddedResource Include="Chords Sound\F#.wav" />
+    <EmbeddedResource Include="Chords Sound\F#m.wav" />
+    <EmbeddedResource Include="Chords Sound\F.wav" />
+    <EmbeddedResource Include="Chords Sound\Fm.wav" />
+    <EmbeddedResource Include="Chords Sound\G#.wav" />
+    <EmbeddedResource Include="Chords Sound\G#m.wav" />
+    <EmbeddedResource Include="Chords Sound\G.wav" />
+    <EmbeddedResource Include="Chords Sound\Gm.wav" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ffmpeg.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\imageGm.jpg" />
+    <None Include="Resources\imageG.jpg" />
+    <None Include="Resources\imageG#m.jpg" />
+    <None Include="Resources\imageG#.jpg" />
+    <None Include="Resources\imageFm.jpg" />
+    <None Include="Resources\imageF.jpg" />
+    <None Include="Resources\imageF#m.jpg" />
+    <None Include="Resources\imageF#.jpg" />
+    <None Include="Resources\imageEm.jpg" />
+    <None Include="Resources\imageE.jpg" />
+    <None Include="Resources\imageDm.jpg" />
+    <None Include="Resources\imageD.jpg" />
+    <None Include="Resources\imageD#m.jpg" />
+    <None Include="Resources\imageD#.jpg" />
+    <None Include="Resources\imageCm.jpg" />
+    <None Include="Resources\imageC.jpg" />
+    <None Include="Resources\imageC#m.jpg" />
+    <None Include="Resources\imageC#.jpg" />
+    <None Include="Resources\imageBm.JPG" />
+    <None Include="Resources\imageB.jpg" />
+    <None Include="Resources\imageAm.jpg" />
+    <None Include="Resources\imageA.jpg" />
+    <None Include="Resources\imageA#m.jpg" />
+    <None Include="Resources\imageA#.jpg" />
+    <None Include="Resources\guitarGm.wav" />
+    <None Include="Resources\guitarG.wav" />
+    <None Include="Resources\guitarG#m.wav" />
+    <None Include="Resources\guitarAb.wav" />
+    <None Include="Resources\guitarFm.wav" />
+    <None Include="Resources\guitarF.wav" />
+    <None Include="Resources\guitarF#m.wav" />
+    <None Include="Resources\guitarF#.wav" />
+    <None Include="Resources\guitarEm.wav" />
+    <None Include="Resources\guitarE.wav" />
+    <None Include="Resources\guitarDm.wav" />
+    <None Include="Resources\guitarD.wav" />
+    <None Include="Resources\guitarD#m.wav" />
+    <None Include="Resources\guitarD#.wav" />
+    <None Include="Resources\guitarCm.wav" />
+    <None Include="Resources\guitarC.wav" />
+    <None Include="Resources\guitarC#m.wav" />
+    <None Include="Resources\guitarC#.wav" />
+    <None Include="Resources\guitarBm.wav" />
+    <None Include="Resources\guitarB.wav" />
+    <None Include="Resources\guitarAm.wav" />
+    <None Include="Resources\guitarA.wav" />
+    <None Include="Resources\guitarBbm.wav" />
+    <None Include="Resources\guitarBb.wav" />
+    <None Include="Resources\Cm.wav" />
+    <None Include="Resources\C.wav" />
+    <None Include="Resources\D.wav" />
+    <None Include="Resources\Ebm.wav" />
+    <None Include="Resources\Eb.wav" />
+    <None Include="Resources\C#m.wav" />
+    <None Include="Resources\Db.wav" />
+    <None Include="Resources\Bm.wav" />
+    <None Include="Resources\B.wav" />
+    <None Include="Resources\Am.wav" />
+    <None Include="Resources\A.wav" />
+    <None Include="Resources\Bbm.wav" />
+    <None Include="Resources\Bb.wav" />
+    <None Include="Resources\Gm.wav" />
+    <None Include="Resources\G.wav" />
+    <None Include="Resources\G#m.wav" />
+    <None Include="Resources\G#.wav" />
+    <None Include="Resources\Fm.wav" />
+    <None Include="Resources\F.wav" />
+    <None Include="Resources\F#m.wav" />
+    <None Include="Resources\F#.wav" />
+    <None Include="Resources\Em.wav" />
+    <None Include="Resources\E.wav" />
+    <None Include="Resources\Dm.wav" />
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\1580026874152959112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
